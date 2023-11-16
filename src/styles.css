@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'airstream';
+    src: url('./Airstream-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Amaranth';
+    src: url('./Amaranth-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amaranth';
+    src: url('./Amaranth-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Amaranth';
+    src: url('./Amaranth-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Amaranth';
+    src: url('./Amaranth-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+body {
+    background: url('./ivan-torres-pizza.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: 0;
+}
+
+.header {
+    height: 100px;
+    background-color: white;
+    box-shadow: 0 5px 30px 1px black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-family: 'airstream';
+    font-size: 50px;
+    margin: 0;
+}
+
+.btns {
+    display: flex;
+    gap: 10px;
+}
+
+.home,
+.menu,
+.contact {
+    border: none;
+    background-color: white;
+    font-family: 'Amaranth';
+    font-size: 20px;
+}
