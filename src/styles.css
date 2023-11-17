@@ -33,9 +33,6 @@
 
 body {
     background: url('./ivan-torres-pizza.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     margin: 0;
 }
@@ -43,7 +40,7 @@ body {
 .header {
     height: 100px;
     background-color: white;
-    box-shadow: 0 5px 30px 1px black;
+    box-shadow: 0 2px 20px 1px black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -68,4 +65,11 @@ h1 {
     background-color: white;
     font-family: 'Amaranth';
     font-size: 20px;
+}
+
+.selected {
+    border-top: 5px solid rgb(225, 187, 35);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: rgb(190, 44, 44);
 }
