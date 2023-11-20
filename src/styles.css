@@ -37,6 +37,12 @@ body {
     margin: 0;
 }
 
+#content {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
 .header {
     height: 100px;
     background-color: white;
@@ -67,9 +73,40 @@ h1 {
     font-size: 20px;
 }
 
+.home:hover,
+.menu:hover,
+.contact:hover {
+    cursor: pointer;
+    background-color: rgb(251, 235, 235);
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
 .selected {
     border-top: 5px solid rgb(225, 187, 35);
     border-top-right-radius: 5px;
     border-top-left-radius: 5px;
     background-color: rgb(190, 44, 44);
+}
+
+.selected:hover {
+    background-color: rgb(223, 60, 60);
+}
+
+.content-body {
+    flex: 1;
+}
+
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.headline {
+    font-family: 'Amaranth';
+    font-style: italic;
+    font-size: 50px;
+    color: white;
 }
