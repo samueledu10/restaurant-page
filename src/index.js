@@ -1,6 +1,7 @@
 import { pageLoad } from "./page-load";
 import { home } from "./home";
 import { menu } from "./menu";
+import { contact } from "./contact";
 import './styles.css';
 
 function main() {
@@ -20,7 +21,7 @@ function main() {
         if (contentBody) {
             contentBody.remove();
         }
-        
+
         if(menuBtn.classList.contains("selected")) {
             menuBtn.classList.toggle("selected");
         } else if(contactBtn.classList.contains("selected")) {
@@ -57,7 +58,7 @@ function main() {
         } else if(menuBtn.classList.contains("selected")) {
             menuBtn.classList.toggle("selected");
         }
-
+        contact();
     });
 }
 
