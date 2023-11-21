@@ -1,5 +1,6 @@
 import { pageLoad } from "./page-load";
 import { home } from "./home";
+import { menu } from "./menu";
 import './styles.css';
 
 function main() {
@@ -19,6 +20,7 @@ function main() {
         if (contentBody) {
             contentBody.remove();
         }
+        
         if(menuBtn.classList.contains("selected")) {
             menuBtn.classList.toggle("selected");
         } else if(contactBtn.classList.contains("selected")) {
@@ -31,16 +33,16 @@ function main() {
         const contentBody = document.querySelector(".content-body");
         menuBtn.classList.add("selected");
         
-
         if (contentBody) {
             contentBody.remove();
         }
+
         if(homeBtn.classList.contains("selected")) {
             homeBtn.classList.toggle("selected");
         } else if(contactBtn.classList.contains("selected")) {
             contactBtn.classList.toggle("selected");
         }
-
+        menu();
     });
 
     contactBtn.addEventListener("click", () => {
